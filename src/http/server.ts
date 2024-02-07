@@ -17,6 +17,7 @@ app.post('/polls', async (request, reply) => {
     const createdPoll = await prisma.poll.create({
         data: {
             title
+            
         }
     })
 
